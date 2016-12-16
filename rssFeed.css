@@ -1,0 +1,120 @@
+body {
+  background: #d4e4e6;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.post-container {
+  padding: 10px;
+  box-shadow: 0 0 2px 2px #9173cc;
+  border: 1px solid #9b78aa;
+  width: 80%;
+  margin: 10px auto;
+  background: #fdffb9;
+  position: relative;
+}
+
+.post-title {
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: #1f0622;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.post-content table td:last-child {
+  padding: 0 10px;
+}
+
+.post-content td span {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.post-content td img {
+  padding: 5px;
+  border: 1px solid #b8c9cc;
+  background: #eee;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.page-utils {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.refresh {
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  background: #b9bb73;
+}
+
+.refresh span {
+  display: none;
+}
+
+.refresh.loading a {
+  display: none;
+}
+
+.refresh.loading span {
+  display: inline;
+}
+
+.time-section {
+  text-align: right;
+}
+
+.date-time, .timer {
+  font-size: 18px;
+  color: #1c42ff;
+}
+
+.updated-at {
+  font-size: 12px;
+  color: #268813;
+}
+
+@-webkit-keyframes spinnerRotate {
+  from{-webkit-transform:rotate(0deg);}
+  to{-webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes spinnerRotate {
+  from{-moz-transform:rotate(0deg);}
+  to{-moz-transform:rotate(360deg);}
+}
+
+@-ms-keyframes spinnerRotate {
+  from{-ms-transform:rotate(0deg);}
+  to{-ms-transform:rotate(360deg);}
+}
+
+#spin{
+  -webkit-animation-name: spinnerRotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spinnerRotate;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spinnerRotate;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
